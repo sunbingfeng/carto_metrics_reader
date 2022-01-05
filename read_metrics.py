@@ -327,6 +327,7 @@ class ShowScalarGraph(tk.Frame):
     def onUpdate(self):
         if(self.graph_clear_requested):
             self.scalar_metrics = {}
+            self.stamps = []
             self.graph_clear_requested = False
             self.a.cla()
 
